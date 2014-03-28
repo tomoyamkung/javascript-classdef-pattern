@@ -1,5 +1,5 @@
 /**
- * TODO 
+ * モジュールパターンで定義したクラス。
  * 
  */
 var ModulePattern2 = (function() {
@@ -25,9 +25,9 @@ var ModulePattern2 = (function() {
 	 */
 	constructor.prototype = {
 		/**
-		 * TODO
+		 * プロパティを返す。
 		 * 
-		 * @return {string} 
+		 * @return {string} プロパティの文字列結合
 		 */
 		toString: function() {
 			return this.name + ":" + this.age;
