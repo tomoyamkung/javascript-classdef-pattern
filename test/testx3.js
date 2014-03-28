@@ -1,9 +1,19 @@
-
+/**
+ * プロトタイプを使ったコンストラクタパターンで定義したクラス。
+ * 
+ * @param {string} name 
+ * @param {integer} age
+ */
 var PrototypeWithConstructor = function(name, age) {
-	this.name = name; // public スコープなプロパティ
-	this.age = age; // public スコープなプロパティ
+	this.name = name; // スコープが public なプロパティ
+	this.age = age; // スコープが public なプロパティ
 };
 PrototypeWithConstructor.prototype = {
+	/**
+	 * プロパティを返す。
+	 * 
+	 * @return {string} プロパティの文字列結合
+	 */
 	toString: function() {
 		return this.name + ":" + this.age;
 	}
